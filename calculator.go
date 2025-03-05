@@ -29,7 +29,7 @@ func (c *calculator) allocate(a Amount, r, s int64) Amount {
 		return 0
 	}
 
-	return a * r / s
+	return a * (r / s)
 }
 
 func (c *calculator) absolute(a Amount) Amount {
